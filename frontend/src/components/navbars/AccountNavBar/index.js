@@ -5,6 +5,7 @@ import { useSelector } from 'react-redux'
 
 import UserMenu from 'components/UserMenu'
 import LanguageMenu from 'components/LanguageMenu'
+import Progress from 'components/ProgressBar'
 
 import * as UserSelectors from 'redux/user/selectors'
 
@@ -40,6 +41,7 @@ export default () => {
                         Hi, {userProfile?.firstName}
                     </span>
                 </div>
+                <Progress />
                 <div className={classes.inner}>
                     <UserMenu />
                     <LanguageMenu />

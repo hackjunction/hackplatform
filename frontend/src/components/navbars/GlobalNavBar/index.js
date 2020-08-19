@@ -6,6 +6,7 @@ import LanguageMenu from 'components/LanguageMenu'
 
 import config from 'constants/config'
 import { Grid, Hidden } from '@material-ui/core'
+import Progress from 'components/ProgressBar'
 
 const useStyles = makeStyles(theme => ({
     wrapper: {
@@ -37,6 +38,7 @@ export default () => {
                     className={classes.wordmark}
                     alt={config.PLATFORM_OWNER_NAME + ' logo'}
                 />
+                <Progress />
                 <Grid className={classes.inner}>
                     <UserMenu />
                     <Hidden only="xs">
